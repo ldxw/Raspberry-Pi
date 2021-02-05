@@ -18,10 +18,21 @@ $ctrlData = [
         'close' => "A00100A1",
     ],
     [
-        'name'  => '电脑1重启按钮',
+        'name'  => '电脑2电源按钮',
         'open'  => "A00201A3",
         'close' => "A00200A2",
     ],
+    [
+        'name'  => '电脑3电源按钮',
+        'open'  => "A00301A4",
+        'close' => "A00300A3",
+    ],
+    [
+        'name'  => '电脑4电源按钮',
+        'open'  => "A00401A5",
+        'close' => "A00400A4",
+    ],
+    
 ];
 
 ob_start();
@@ -104,6 +115,9 @@ function echoJSON($data) {
 <head>
     <meta charset="utf-8">
     <title>继电器控制</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/ldxw/CDN@0.003/favicon/64x64/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/ldxw/CDN@0.003/favicon/64x64/favicon.ico" type="image/x-icon" />
     <script src="https://hu60.cn/tpl/jhin/js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
